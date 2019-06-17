@@ -14,7 +14,7 @@ import tornado.web
 import tornado.gen
 
 from tornado.options import define,options
-define('port',default=80,help='run on the given port',type=int)
+define('port',default=8080,help='run on the given port',type=int)
 
 class BaseHandler(tornado.web.RequestHandler):
     def get_current_user(self):
